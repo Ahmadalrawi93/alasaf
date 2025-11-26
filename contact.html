@@ -28,6 +28,26 @@
         <img src="images/logo.png" alt="شعار شركة العساف للمحاماة">
         <div class="logo-text">شركة العساف للمحاماة</div>
       </div>
+      
+      <!-- زر تبديل اللغة -->
+      <div class="language-selector">
+        <button id="languageToggle" class="language-toggle" aria-label="تبديل اللغة">
+          <i class="fas fa-globe"></i>
+          <span class="lang-text">AR</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="language-dropdown" id="languageDropdown">
+          <div class="language-option" data-lang="ar">
+            <span>العربية</span>
+            <span class="lang-code">AR</span>
+          </div>
+          <div class="language-option" data-lang="en">
+            <span>English</span>
+            <span class="lang-code">EN</span>
+          </div>
+        </div>
+      </div>
+      
       <nav>
         <ul class="nav">
           <li><a href="index.html">الرئيسية</a></li>
@@ -197,6 +217,7 @@
   </footer>
 
   <!-- JavaScript -->
+  <script src="js/translations.js"></script>
   <script src="js/script.js"></script>
 
   <!-- JavaScript إضافي للأسئلة الشائعة -->

@@ -28,6 +28,26 @@
         <img src="images/logo.png" alt="شعار شركة العساف للمحاماة">
         <div class="logo-text">شركة العساف للمحاماة</div>
       </div>
+      
+      <!-- زر تبديل اللغة -->
+      <div class="language-selector">
+        <button id="languageToggle" class="language-toggle" aria-label="تبديل اللغة">
+          <i class="fas fa-globe"></i>
+          <span class="lang-text">AR</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="language-dropdown" id="languageDropdown">
+          <div class="language-option" data-lang="ar">
+            <span>العربية</span>
+            <span class="lang-code">AR</span>
+          </div>
+          <div class="language-option" data-lang="en">
+            <span>English</span>
+            <span class="lang-code">EN</span>
+          </div>
+        </div>
+      </div>
+      
       <nav>
         <ul class="nav">
           <li><a href="index.html">الرئيسية</a></li>
@@ -63,132 +83,111 @@
         </p>
 
         <div class="clients-grid"
-          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-top: 3rem;">
+          style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-top: 3rem;">
           <!-- محمد ريكان علي الحلبوسي -->
-          <div class="client-card fade-in"
-            style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-lg); text-align: center; transition: transform 0.3s ease; border-top: 5px solid var(--secondary-color);">
-            <img src="images/1.png" alt="محمد ريكان علي الحلبوسي" class="client-logo"
-              style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%; margin: 0 auto 2rem; border: 4px solid var(--secondary-color);">
-            <h3 class="client-name"
-              style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color); margin-bottom: 1rem;">محمد ريكان
-              علي الحلبوسي</h3>
-            <div class="client-title"
-              style="font-size: 1.1rem; color: var(--secondary-color); font-weight: 600; margin-bottom: 1.5rem;">رئيس
+          <div class="service-card client-card fade-in">
+            <div class="service-icon"
+              style="width: 120px; height: 120px; margin: 0 auto 1.5rem; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow);">
+              <img src="images/1.png" alt="محمد ريكان علي الحلبوسي" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3 class="client-name">محمد ريكان علي الحلبوسي</h3>
+            <div class="client-title" style="font-size: 1rem; color: var(--secondary-color); font-weight: 600; margin-bottom: 1.5rem;">رئيس
               مجلس النواب العراقي</div>
-            <div class="client-testimonial"
-              style="color: var(--text-light); line-height: 1.8; font-style: italic; margin-bottom: 1.5rem;">
+            <p class="client-testimonial" style="text-align: justify; line-height: 1.8; margin-bottom: 1.5rem;">
               "نحن نشارك أكبر قدر ممكن من المعرفة مع عملائنا ونعتقد أن المعلومات القانونية هي أفضل طريقة لمساعدة الآخرين
               وتقديم الدعم، نستمع إلى الرأي والرأي الآخر نحن نؤمن أن أفضل الحلول والآراء هي التي تتعرض للمناقشات
               والإختلافات وهذه الطريقة هي الشكل المناسب لأفضل الممارسات القانونية."
-            </div>
+            </p>
           </div>
 
           <!-- مجموعة شركات البعد الرابع -->
-          <div class="client-card fade-in"
-            style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-lg); text-align: center; transition: transform 0.3s ease; border-top: 5px solid var(--accent-color);">
-            <img src="images/2.png" alt="مجموعة شركات البعد الرابع" class="client-logo"
-              style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%; margin: 0 auto 2rem; border: 4px solid var(--accent-color);">
-            <h3 class="client-name"
-              style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color); margin-bottom: 1rem;">مجموعة
-              شركات البعد الرابع</h3>
-            <div class="client-title"
-              style="font-size: 1.1rem; color: var(--accent-color); font-weight: 600; margin-bottom: 1.5rem;">للمقاولات
+          <div class="service-card client-card fade-in">
+            <div class="service-icon"
+              style="width: 120px; height: 120px; margin: 0 auto 1.5rem; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow);">
+              <img src="images/2.png" alt="مجموعة شركات البعد الرابع" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3 class="client-name">مجموعة شركات البعد الرابع</h3>
+            <div class="client-title" style="font-size: 1rem; color: var(--accent-color); font-weight: 600; margin-bottom: 1.5rem;">للمقاولات
               والاستشارات</div>
-            <div class="client-testimonial"
-              style="color: var(--text-light); line-height: 1.8; font-style: italic; margin-bottom: 1.5rem;">
+            <p class="client-testimonial" style="text-align: justify; line-height: 1.8; margin-bottom: 1.5rem;">
               "مجموعة شركات البعد الرابع للمقاولات والاستشارات من الشركات الأولى العراقية. قدمنا أفضل الخدمات في مسجل
               الشركات، والضريبة والضمان الاجتماعي، والإقامات والمحاسبة، وإبرام العقود، والترافع في المحاكم القانونية."
-            </div>
+            </p>
           </div>
 
           <!-- شركة فوز الطيف -->
-          <div class="client-card fade-in"
-            style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-lg); text-align: center; transition: transform 0.3s ease; border-top: 5px solid #e53e3e;">
-            <img src="images/3.jpg" alt="شركة فوز الطيف" class="client-logo"
-              style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%; margin: 0 auto 2rem; border: 4px solid #e53e3e;">
-            <h3 class="client-name"
-              style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color); margin-bottom: 1rem;">شركة فوز
-              الطيف</h3>
-            <div class="client-title"
-              style="font-size: 1.1rem; color: #e53e3e; font-weight: 600; margin-bottom: 1.5rem;">للوكالات التجارية
+          <div class="service-card client-card fade-in">
+            <div class="service-icon"
+              style="width: 120px; height: 120px; margin: 0 auto 1.5rem; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow);">
+              <img src="images/3.jpg" alt="شركة فوز الطيف" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
-            <div class="client-testimonial"
-              style="color: var(--text-light); line-height: 1.8; font-style: italic; margin-bottom: 1.5rem;">
+            <h3 class="client-name">شركة فوز الطيف</h3>
+            <div class="client-title" style="font-size: 1rem; color: #e53e3e; font-weight: 600; margin-bottom: 1.5rem;">للوكالات التجارية
+            </div>
+            <p class="client-testimonial" style="text-align: justify; line-height: 1.8; margin-bottom: 1.5rem;">
               "وكيل شركة نيسان وسازوكي وعدد من الشركات الأخرى. قمنا بالعمل مع شركة فوز الطيف وهي عبارة عن وكالة تجارية
               لمجموعة من الشركات الخاصة بالسيارات من مثل نيسان العراق وسازوكي وعدد آخر من الشركات."
-            </div>
+            </p>
           </div>
 
           <!-- شركة أوكان كروب -->
-          <div class="client-card fade-in"
-            style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-lg); text-align: center; transition: transform 0.3s ease; border-top: 5px solid #38a169;">
-            <img src="images/4.jpg" alt="شركة أوكان كروب" class="client-logo"
-              style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%; margin: 0 auto 2rem; border: 4px solid #38a169;">
-            <h3 class="client-name"
-              style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color); margin-bottom: 1rem;">شركة أوكان
-              كروب</h3>
-            <div class="client-title"
-              style="font-size: 1.1rem; color: #38a169; font-weight: 600; margin-bottom: 1.5rem;">للصناعات الإسمنتية
+          <div class="service-card client-card fade-in">
+            <div class="service-icon"
+              style="width: 120px; height: 120px; margin: 0 auto 1.5rem; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow);">
+              <img src="images/4.jpg" alt="شركة أوكان كروب" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
-            <div class="client-testimonial"
-              style="color: var(--text-light); line-height: 1.8; font-style: italic; margin-bottom: 1.5rem;">
+            <h3 class="client-name">شركة أوكان كروب</h3>
+            <div class="client-title" style="font-size: 1rem; color: #38a169; font-weight: 600; margin-bottom: 1.5rem;">للصناعات الإسمنتية
+            </div>
+            <p class="client-testimonial" style="text-align: justify; line-height: 1.8; margin-bottom: 1.5rem;">
               "مجموعة شركات مختصة بالصناعة الإسمنتية ومحطات الوقود. قمنا بإنجاز المتعلقات القانونية لصالح شركة أوكان
               كروب، شركة أوكان كروب للصناعات الإسمنتية المستثمر لمعمل إسمنت بادش ومعمل إسمنت الرافدين، وأوكان أويل، مالك
               محطات الوقود المتنقل المشروع الوحيد في العراق."
-            </div>
+            </p>
           </div>
 
           <!-- مصرف العالم الإسلامي -->
-          <div class="client-card fade-in"
-            style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-lg); text-align: center; transition: transform 0.3s ease; border-top: 5px solid #d69e2e;">
-            <img src="images/5.png" alt="مصرف العالم الإسلامي" class="client-logo"
-              style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%; margin: 0 auto 2rem; border: 4px solid #d69e2e;">
-            <h3 class="client-name"
-              style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color); margin-bottom: 1rem;">مصرف العالم
-              الإسلامي</h3>
-            <div class="client-title"
-              style="font-size: 1.1rem; color: #d69e2e; font-weight: 600; margin-bottom: 1.5rem;">مصرف عراقي إسلامي
+          <div class="service-card client-card fade-in">
+            <div class="service-icon"
+              style="width: 120px; height: 120px; margin: 0 auto 1.5rem; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow);">
+              <img src="images/5.png" alt="مصرف العالم الإسلامي" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
-            <div class="client-testimonial"
-              style="color: var(--text-light); line-height: 1.8; font-style: italic; margin-bottom: 1.5rem;">
+            <h3 class="client-name">مصرف العالم الإسلامي</h3>
+            <div class="client-title" style="font-size: 1rem; color: #d69e2e; font-weight: 600; margin-bottom: 1.5rem;">مصرف عراقي إسلامي
+            </div>
+            <p class="client-testimonial" style="text-align: justify; line-height: 1.8; margin-bottom: 1.5rem;">
               "نحن وكلاء مصرف العالم الإسلامي مختصين بكتب المصارف وخطابات الضمان المصرفية لدى مصرف العالم الإسلامي."
-            </div>
+            </p>
           </div>
 
           <!-- شركة خطيب وعلمي -->
-          <div class="client-card fade-in"
-            style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-lg); text-align: center; transition: transform 0.3s ease; border-top: 5px solid #805ad5;">
-            <img src="images/6.jpg" alt="شركة خطيب وعلمي" class="client-logo"
-              style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%; margin: 0 auto 2rem; border: 4px solid #805ad5;">
-            <h3 class="client-name"
-              style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color); margin-bottom: 1rem;">شركة خطيب
-              وعلمي</h3>
-            <div class="client-title"
-              style="font-size: 1.1rem; color: #805ad5; font-weight: 600; margin-bottom: 1.5rem;">للاستشارات الهندسية -
+          <div class="service-card client-card fade-in">
+            <div class="service-icon"
+              style="width: 120px; height: 120px; margin: 0 auto 1.5rem; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow);">
+              <img src="images/6.jpg" alt="شركة خطيب وعلمي" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3 class="client-name">شركة خطيب وعلمي</h3>
+            <div class="client-title" style="font-size: 1rem; color: #805ad5; font-weight: 600; margin-bottom: 1.5rem;">للاستشارات الهندسية -
               لبنان</div>
-            <div class="client-testimonial"
-              style="color: var(--text-light); line-height: 1.8; font-style: italic; margin-bottom: 1.5rem;">
+            <p class="client-testimonial" style="text-align: justify; line-height: 1.8; margin-bottom: 1.5rem;">
               "هي شركة مختصة بالاستشارات الهندسية في لبنان، تم التعاون لأجل حل القضايا والأمور القانونية في الشركة،
               كمستشار قانوني داخل الشركة وتقديم كافة الخدمات القانونية."
-            </div>
+            </p>
           </div>
 
           <!-- نواف عبد الحميد الخريبيط -->
-          <div class="client-card fade-in"
-            style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-lg); text-align: center; transition: transform 0.3s ease; border-top: 5px solid #e53e3e;">
-            <img src="images/7.jpg" alt="نواف عبد الحميد الخريبيط" class="client-logo"
-              style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%; margin: 0 auto 2rem; border: 4px solid #e53e3e;">
-            <h3 class="client-name"
-              style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color); margin-bottom: 1rem;">نواف عبد
-              الحميد الخريبيط</h3>
-            <div class="client-title"
-              style="font-size: 1.1rem; color: #e53e3e; font-weight: 600; margin-bottom: 1.5rem;">رئيس مجلس الأعمال
+          <div class="service-card client-card fade-in">
+            <div class="service-icon"
+              style="width: 120px; height: 120px; margin: 0 auto 1.5rem; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow);">
+              <img src="images/7.jpg" alt="نواف عبد الحميد الخريبيط" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3 class="client-name">نواف عبد الحميد الخريبيط</h3>
+            <div class="client-title" style="font-size: 1rem; color: #e53e3e; font-weight: 600; margin-bottom: 1.5rem;">رئيس مجلس الأعمال
               العراقي السعودي</div>
-            <div class="client-testimonial"
-              style="color: var(--text-light); line-height: 1.8; font-style: italic; margin-bottom: 1.5rem;">
+            <p class="client-testimonial" style="text-align: justify; line-height: 1.8; margin-bottom: 1.5rem;">
               "لتعزيز العلاقات الاقتصادية والتجارية بين العراق والمملكة العربية السعودية قمنا بإنجاز الأمور القانونية
               بما يخص الاستشارات القانونية لتسهيل عملية التعاون بين البلدين وتطوير الفرص التجارية."
-            </div>
+            </p>
           </div>
         </div>
       </div>
@@ -244,6 +243,7 @@
   </footer>
 
   <!-- JavaScript -->
+  <script src="js/translations.js"></script>
   <script src="js/script.js"></script>
 </body>
 
